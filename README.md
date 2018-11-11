@@ -23,9 +23,10 @@ python readCodes.py
 ```
 This will create a json file named output.json with the codes from the text files. In that json file you'll see a suggested topic based on the filename & button name from your e-remote app. If no name found, it'll put "unknown" there.
 
-The next step is to check those topics. So open up the output.json and check them, don't link them? Simply adjust them :)
+The next step is to check those topics. So open up the output.json and check them, don't like them? Simply adjust them :)
 
 Next up is to import them in the commands folder of our broadlink-mqtt client. This, of course, has to happen on the actual device that'll run that client, or run it on your current device and copy the commands folder to the client-device.
+Note: I've ran this when the command folder was non-existant. So if you allready have a folder, make sure to back it up first.
 
 so: place your output.json file in the same folder as the script found in `2. Create commands`. and then smply run:
 ```
