@@ -28,6 +28,6 @@ if mode == "2" or mode == "3":
         HaConfig.append('  command_topic: "' + data['topic'] + '"')
         HaConfig.append('  payload_on: "replay"')
         HaConfig.append('  payload_off: "replay"')
-    with open("HaConfig.xaml", 'wb') as f:
+    with open("HaConfig.yaml", 'wb') as f:
         f.write("\n".join(HaConfig))
     print("Done creating the HA Config!")
