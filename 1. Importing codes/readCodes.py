@@ -11,7 +11,7 @@ for file in os.listdir("."):
                     if line.startswith("Button Name:"):
                             outputJson["name"] = line[13:len(line)]
                             if len(line) > 13:
-                                    outputJson["topic"] = file[0:len(file)-4].lower() + "/" + line[13:len(line)].lower()
+                                    outputJson["topic"] = "broadlink/" + file[0:len(file)-4].lower().replace(" ", "_") + "/" + line[13:len(line)].lower().replace(" ", "_")
                             else:
                                     outputJson["topic"] = "unknown"
                     elif line.startswith("Button ID:"):
