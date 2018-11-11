@@ -1,7 +1,7 @@
 # broadlinkMqttSetup
 A tutorial on how to setup broadlink mqtt for use with Home-Assistant
 
-Current state: **work in progress**
+Current state: **Works on my machine**
 
 # Dependencies
 We'll be using MQTT as our backbone. So you'll need an MQTT broker, and this will be the client that'll bridge MQTT to our Broadlink device: [Broadlink-mqtt](https://github.com/eschava/broadlink-mqtt)
@@ -31,9 +31,16 @@ so: place your output.json file in the same folder as the script found in `2. Cr
 ```
 python createCommands.py
 ```
+It'll request you to select the output:
+- Only the command folder(s)
+- Only the HA config to paste into home assistant
+- Both the commands and the home assistant config
 
-... To continue here ...
+# Step 3: Putting it all together
+In this step you should have the command folder structure set up as required for Broadlink-mqtt and you can fire up that client. Perform some tests if you like to make sure the topics are to your linking.
+Next, use the example HA config file to jumpstart your switches config in HA, or make your own.
 
+Done!
 
 # Links
 
